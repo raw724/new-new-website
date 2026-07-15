@@ -15,12 +15,12 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease, delay: 0.15 }}
-        className="leading-[1]"
+        className="flex flex-wrap items-baseline justify-center gap-x-4 leading-[1]"
       >
-        <span className="block font-display italic font-medium tracking-tight text-[13vw] md:text-[6.5rem]">
+        <span className="font-display italic font-normal tracking-tight text-[13vw] md:text-[6rem]">
           {profile.firstName}
         </span>
-        <span className="block font-body font-extrabold uppercase tracking-[0.06em] text-[7vw] md:text-[2.75rem] mt-1">
+        <span className="font-body font-medium tracking-tight text-[13vw] md:text-[6rem] text-ink/90">
           {profile.lastName}
         </span>
       </motion.h1>
