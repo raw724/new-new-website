@@ -9,7 +9,7 @@ const config: Config = {
     extend: {
       colors: {
         porcelain: "#FBFAF7",
-        ink: "#12110F",
+        ink: "#44403C",
         signal: "#FF5A1F",
         ember: "#C2410C",
         steel: "#8A8580",

@@ -29,7 +29,7 @@ export default function Flow({
     <section
       id={id}
       ref={ref}
-      className={`relative min-h-screen flex items-center justify-center px-6 py-24 ${
+      className={`relative min-h-[100svh] flex items-center justify-center px-6 py-24 ${
         dark ? "bg-ink text-porcelain" : ""
       } ${className}`}
     >

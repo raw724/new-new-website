@@ -75,3 +75,19 @@ lib/data.ts                all CV content — the single source of truth
 - The contact section currently opens the visitor's email client via a `mailto:` link. If you
   want an in-page form that emails you directly, that needs a small backend piece (an API route
   plus a transactional email service like Resend) — happy to add it whenever you want it.
+
+## Latest refinements
+
+- **iOS scroll fix:** removed `overflow-x-hidden` from `<body>` (it can break `position: fixed`
+  descendants during momentum scrolling on iOS Safari), switched `100vh`-based section heights to
+  `100svh` (stable across the address-bar show/hide animation), and replaced the ambient
+  background's `filter: blur()` shapes with radial gradients — blurred, transformed, animated
+  layers are one of the more expensive things to composite on iOS and were the main source of the
+  jank.
+- **Grey, not black:** the `ink` color token is now a warm charcoal grey (`#44403C`) instead of
+  near-black, everywhere it's used (text and the dark section backgrounds).
+- **Two-font title:** the hero name now pairs italic Fraunces (first name) with bold uppercase
+  Inter (last name).
+- **Emphasis styling:** any body copy in `lib/data.ts` can wrap words in `<i>...</i>` and they'll
+  render in orange, italic Fraunces — see `about` and the `tech` interest for examples. Handled by
+  `lib/emphasis.tsx`.

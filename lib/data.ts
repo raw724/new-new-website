@@ -8,26 +8,28 @@ export type Item = {
 
 export const profile = {
   name: "Russell Walton",
+  firstName: "Russell",
+  lastName: "Walton",
   location: "Jersey — Exeter",
   phone: "+44 7392 577186",
-  email: "russellwalton99@icloud.com",
+  email: "me@russellwalton.com",
   contactEmail: "me@russellwalton.com",
   site: "russellwalton.com",
-  tagline: "Computer Science student. Sailor. Hyrox athlete.",
+  tagline: "computer science student. sailor. manager on duty.",
 };
 
 export const about =
-  "I study Computational Mathematics at Exeter, race Hobie 16 catamarans, and run the floor at Pizza Express on the weekends. Driven, energetic, a bit restless — I like being good at more than one thing at once.";
+  "Computer Science undergrad with strong leadership experience managing teams in <i>hospitality</i> and <i>water sports</i>. Skilled and motivated to deliver outstanding customer experiences — and able to take initiative in <i>fast-paced environments</i>, thriving in <i>complex problems</i>.";
 
 export const education: Item[] = [
   {
     slug: "university-of-exeter",
     title: "University of Exeter",
     meta: "2025 — Present",
-    blurb: "BSc Computational Mathematics.",
+    blurb: "BSc Computer Science.",
     body: [
-      "Studying Computational Mathematics at Exeter, having started in 2025.",
-      "The course sits between pure maths and computer science — a natural next step after A-Level Maths, Physics and Computer Science.",
+      "Studying for a BSc in Computer Science at Exeter, having started in 2025.",
+      "The degree builds on A-Level Maths, Physics and Computer Science, covering everything from core programming and algorithms through to the mathematical foundations underneath them.",
       "Alongside lectures, I'm getting involved with university societies and looking for ways to keep sailing and training through term time.",
     ],
   },
@@ -105,9 +107,9 @@ export const interests: Item[] = [
     title: "Tech",
     blurb: "Computer Science at Exeter, building things.",
     body: [
-      "Studying Computational Mathematics at Exeter, with a couple of weeks' experience as a game developer at Scientific Games working in Java and TypeScript.",
-      "This site — and russellwalton.com — are both things I build and maintain myself.",
-      "Interested in where maths, sailing telemetry, and software actually overlap.",
+      "Studying <i>Computer Science</i> at Exeter, with hands-on experience as a <i>game developer</i> at Scientific Games, working across Java and TypeScript.",
+      "This site — and russellwalton.com — are both <i>built and maintained by me</i>, end to end.",
+      "Mostly interested in where <i>sailing data</i>, <i>fitness tracking</i> and <i>software</i> actually meet.",
     ],
   },
 ];

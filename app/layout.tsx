@@ -13,12 +13,12 @@ const display = Fraunces({
 const body = Inter({
   subsets: ["latin"],
   variable: "--font-body",
-  weight: ["400", "500"],
+  weight: ["400", "500", "700", "800"],
 });
 
 export const metadata: Metadata = {
   title: "Russell Walton",
-  description: "Computer Science student. Sailor. Hyrox athlete.",
+  description: "computer science student. sailor. manager on duty.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
-      <body className="bg-porcelain text-ink font-body antialiased overflow-x-hidden">
+      <body className="bg-porcelain text-ink font-body antialiased">
         <CustomCursor />
         {children}
       </body>

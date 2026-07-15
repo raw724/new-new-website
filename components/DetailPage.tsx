@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Item } from "@/lib/data";
+import { renderEmphasis } from "@/lib/emphasis";
 
 export default function DetailPage({
   item,
@@ -11,7 +12,7 @@ export default function DetailPage({
   backLabel: string;
 }) {
   return (
-    <main className="min-h-screen flex items-center justify-center px-6 py-32">
+    <main className="min-h-[100svh] flex items-center justify-center px-6 py-32">
       <div className="w-full max-w-xl">
         <Link
           href={backHref}
@@ -28,7 +29,7 @@ export default function DetailPage({
         <div className="space-y-5">
           {item.body.map((p, i) => (
             <p key={i} className="text-lg text-ink/75 leading-relaxed">
-              {p}
+              {renderEmphasis(p)}
             </p>
           ))}
         </div>

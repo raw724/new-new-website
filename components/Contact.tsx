@@ -5,7 +5,7 @@ import { contact } from "@/lib/data";
 
 export default function Contact() {
   return (
-    <Flow id="contact" dark className="min-h-[80vh]">
+    <Flow id="contact" dark className="min-h-[80svh]">
       <p className="text-sm text-porcelain/50 mb-6">{contact.site}</p>
       <a
         href={`mailto:${contact.email}`}

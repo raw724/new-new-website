@@ -9,6 +9,17 @@
 
 html {
   scroll-behavior: smooth;
+  /* Prevents the classic iOS Safari horizontal-overflow + fixed-position
+     jank without using overflow-x-hidden on <body>, which can break
+     position: fixed descendants during momentum scrolling on iOS. */
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: clip;
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -33,4 +44,10 @@ html {
 .focus-ring:focus-visible {
   outline: 2px solid #ff5a1f;
   outline-offset: 4px;
+}
+
+.emphasis {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: #ff5a1f;
 }
